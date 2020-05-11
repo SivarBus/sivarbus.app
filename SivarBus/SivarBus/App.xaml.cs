@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SivarBus.View;
+using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -10,7 +11,8 @@ namespace SivarBus
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            //MainPage = new MainPage();
+            MainPage = new NavigationPage(new PersonasPage());
         }
 
         protected override void OnStart()

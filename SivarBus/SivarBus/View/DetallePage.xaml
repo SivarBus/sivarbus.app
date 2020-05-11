@@ -4,13 +4,12 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
-             x:Class="SivarBus.MainPage">
-    <ScrollView>
+             x:Class="SivarBus.View.DetallePage">
+    <ContentPage.Content>
         <StackLayout>
-        <!-- Place new controls here -->
-        <Label Text="Sivar Bus!" 
-           HorizontalOptions="Center"
-           />
-    </StackLayout>
-    </ScrollView>
+            <Label Text="{Binding Nombre}"></Label>
+            <Label Text="{Binding Apellido}"></Label>
+            <Label Text="{Binding Edad}"></Label>
+        </StackLayout>
+    </ContentPage.Content>
 </ContentPage>
